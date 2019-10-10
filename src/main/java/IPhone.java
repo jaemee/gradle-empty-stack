@@ -1,12 +1,12 @@
 public class IPhone extends Mobile {
 
-    public IPhone() {
-        super("iPhone11", "Black", "iPhone");
+    public IPhone(String name, String color, String brand) {
+        super(name, color, brand);
     }
 
     @Override
     public void call(String message) {
-        System.out.println("<iPhone>");
+        System.out.print("<iPhone>");
         super.call(message);
     }
 }

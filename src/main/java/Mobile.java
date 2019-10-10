@@ -10,7 +10,11 @@ public class Mobile {
     }
 
     public void call(String message){
-        System.out.println("Message : " + message);
+        if((name.equalsIgnoreCase("Android") && message.length() <= 20) || (name.equalsIgnoreCase("iPhone") && message.length() <= 15)) {
+            System.out.print("Message : " + message);
+        }else{
+            System.out.print("Message : Message cannot be sent");
+        }
     }
 
     public void getMobileBasicInfo(){
