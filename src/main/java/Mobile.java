@@ -11,9 +11,9 @@ public class Mobile {
 
     public void call(String message){
         if((brand.equalsIgnoreCase("Android") && message.length() <= 20) || (brand.equalsIgnoreCase("iPhone") && message.length() <= 15)) {
-            System.out.print("Message : " + message);
+            System.out.println("Message : " + message);
         }else{
-            System.out.print("Message : Message cannot be sent");
+            System.out.println("Message : Message cannot be sent");
         }
     }
 

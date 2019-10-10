@@ -7,9 +7,7 @@ public class Android extends Mobile{
     @Override
     public void call(String message) {
         System.out.print("<Android>");
-        if(message.length() <= 150) {
-            super.call(message);
-        }
+        super.call(message);
     }
 
     @Override

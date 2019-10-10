@@ -15,6 +15,8 @@ public class App {
         Person otherPerson = new Person(iPhone, "This is a message");
         person.setName("JAEME");
 
+        android.getMobileBasicInfo();
+        iPhone.getMobileBasicInfo();
 //        IPhoneRobot robot = new IPhoneRobot(android, "Message");
         IPhoneRobot anotherRobot = new IPhoneRobot(iPhone, "Message");
     }
