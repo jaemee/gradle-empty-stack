@@ -3,8 +3,18 @@ public class Mobile {
     private String color;
     private String brand;
 
+    public Mobile(String name, String color, String brand) {
+        this.name = name;
+        this.color = color;
+        this.brand = brand;
+    }
+
     public void call(String message){
         System.out.println("Message : " + message);
+    }
+
+    public void getMobileBasicInfo(){
+        System.out.println("name : " + getName() + ", color : " + getColor() + ", brand : " + getBrand());
     }
 
     public String getName() {
