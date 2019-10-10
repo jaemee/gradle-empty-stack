@@ -7,6 +7,15 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Android android = new Android("Huawei", "Black", "Android");
+        Person person = new Person(android, "This is a message");
+        person.setName("JAE");
+
+        IPhone iPhone = new IPhone("Huawei", "Black", "iPhone");
+        Person otherPerson = new Person(iPhone, "This is a message");
+        person.setName("JAEME");
+
+//        IPhoneRobot robot = new IPhoneRobot(android, "Message");
+        IPhoneRobot anotherRobot = new IPhoneRobot(iPhone, "Message");
     }
 }

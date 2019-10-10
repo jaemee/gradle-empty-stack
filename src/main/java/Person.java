@@ -1,13 +1,8 @@
 public class Person {
     private String name;
 
-    public static void main(String[] args){
-        Mobile mobile = new Android("Android", "Black", "LG");
-        mobile.call("123213123asdsaasdsad213");
-    }
-
-    public Person(String name) {
-        this.name = name;
+    public Person(Mobile mobile, String message) {
+        mobile.call(getName() + message);
     }
 
     public String getName() {

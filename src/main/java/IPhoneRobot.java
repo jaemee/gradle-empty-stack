@@ -1,6 +1,6 @@
-public class IPhoneRobot extends IPhone {
+public class IPhoneRobot {
 
-    public IPhoneRobot(String name, String color, String brand) {
-        super(name, color, brand);
+    public IPhoneRobot(IPhone iphone, String message) {
+        iphone.call(message);
     }
 }
